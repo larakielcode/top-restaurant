@@ -1,4 +1,5 @@
 const historyApiFallback = require('connect-history-api-fallback');
+const { watchFile } = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -13,11 +14,9 @@ module.exports = {
         clean: true,
         assetModuleFilename: 'images/[name].[hash][ext][query]',
     },
-    devtool: 'source-map',
+    devtool: 'eval-source-map',
     devServer: {
-        static: {
-            directory: path.resolve(__dirname, 'dist'),
-        },
+        watchFiles: ['src/template.html'],
         port: 3000,
         hot: true,
         compress: true,

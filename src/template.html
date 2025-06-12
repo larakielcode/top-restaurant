@@ -6,11 +6,16 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="container">
-        <h1>hello</h1>
-        <p>this is a test</p>
-        <p>another test build</p>
-        <img id="logo" alt="">
-    </div>
+    
+    <header>
+        <nav>
+            <button id="homebtn" class="active" type="button">Home</button>
+            <button id="menubtn" type="button">Menu</button>
+            <button id="contactbtn" type="button">Contact</button>
+        </nav>
+    </header>
+
+    <div id="content"></div>
+
 </body>
 </html>
