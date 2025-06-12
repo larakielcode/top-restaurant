@@ -1,10 +1,10 @@
 import "./styles/main.css";
-import { test } from "./mainscript.js";
-import { home } from "./home.js";
 import logo from "./assets/larakielresto.png";
+import home from "./home.js";
 
-console.log(home);
-console.log(test);
+const logoImg = document.querySelector('#company-logo'); // logo image
+const content = document.querySelector('#content'); // content area div
 
-const logoImg = document.querySelector('#company-logo');
+home(content);
+
 logoImg.src = logo;
