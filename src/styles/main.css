@@ -11,6 +11,9 @@
     --bg-color: #fffdec;
     --pink-color: #ed87ae;
     --white-color: #fffeee;
+    --gray-color: #7c7c7c;
+    --blue-color: #70abc2;
+    --yellow-color: #fade7a;
 }
 
 body {
@@ -35,7 +38,7 @@ nav > button {
     border: none;
     border-radius: 0.3rem;
     background-color: var(--bg-color);
-    color: gray;
+    color: var(--gray-color);
     cursor: pointer;
     border-bottom: thick solid var(--pink-color);
 }
@@ -44,4 +47,49 @@ header {
     padding: 0.75rem 0;
     border-bottom: thin solid #f5f3e6;
     box-shadow: 0.1rem 0.1rem 0.5rem 0.3rem #e9e9e4;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    width: 80dvw;
+    margin-top: 0.8rem;
+    border-radius: 2rem;
+}
+
+#content #first-div {
+    padding: 3rem 2rem;
+}
+
+#content #second-div {
+    padding: 0 3rem;
+    align-self: center;
+    text-align: justify;
+    color: var(--gray-color);
+}
+
+#content #second-div h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--blue-color);
+}
+
+#content #second-div p {
+    color: var(--gray-color);
+    line-height: 1.8;
+}
+
+#third-div {
+    grid-column: 1 / 3;
+}
+
+#company-logo {
+    width: 500px;
+    border-radius: 100%;
 }
