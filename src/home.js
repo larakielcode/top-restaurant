@@ -1,10 +1,6 @@
 import logo from "./assets/larakielresto.png";
-import { menuBtn } from "./header";
 
 function displayHome(content) {
-
-
-    menuBtn[0].className = 'active';
 
     const firstDiv = document.createElement('div');
     const secondDiv = document.createElement('div');
