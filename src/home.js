@@ -1,6 +1,11 @@
 import logo from "./assets/larakielresto.png";
+import { menuBtn } from "./header";
 
 function displayHome(content) {
+
+
+    menuBtn[0].className = 'active';
+
     const firstDiv = document.createElement('div');
     const secondDiv = document.createElement('div');
     const homeTitle = document.createElement('h1');
@@ -32,6 +37,8 @@ function displayHome(content) {
     thirdDiv.appendChild(thirdDivRight);
     thirdDivRight.setAttribute('class', 'third-div-right');
     thirdDivRight.innerHTML = "Address: <strong><em>14th Floor 1Nito Tower, Archbishop Reyes Ave, Cebu City, 6000 Cebu</em></strong>";
+
+    // set the menu home button class to active
 
 }
 
