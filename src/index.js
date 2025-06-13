@@ -4,6 +4,7 @@ import displayHome from "./home.js";
 import showMenuPanel from "./menu.js";
 
 window.onload = () => {
+    menuBtn[0].classList.add('active');
     displayHome(content);
 }
 
