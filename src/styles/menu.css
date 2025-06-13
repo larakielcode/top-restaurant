@@ -51,7 +51,8 @@
 }
 
 .main-course-menu ul li,.main-course-prices ul li {
-    margin-bottom: 0.2rem;
+    margin: 0.3rem 0 0.3rem 0;
+    padding: 0 0 0.3rem 0;
     color: var(--gray-color);
     letter-spacing: 0.1rem;
     text-transform: uppercase;
