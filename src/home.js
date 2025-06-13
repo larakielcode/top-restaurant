@@ -1,6 +1,6 @@
 import logo from "./assets/larakielresto.png";
 
-function displayHome(content) {
+export default function displayHome(content) {
 
     const firstDiv = document.createElement('div');
     const secondDiv = document.createElement('div');
@@ -37,8 +37,6 @@ function displayHome(content) {
     // set the menu home button class to active
 
 }
-
-export default displayHome
 
 
 /* 
