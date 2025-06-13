@@ -1,9 +1,11 @@
 import "./styles/main.css";
 import "./styles/menu.css";
+import "./styles/contact.css";
 
 import { content, menuBtn, clearClass } from "./header.js";
 import displayHome from "./home.js";
 import showMenuPanel from "./menu.js";
+import showContactUs from "./contactus.js";
 
 window.onload = () => {
     menuBtn[0].classList.add('active');
@@ -28,7 +30,7 @@ menuBtn.forEach(cell => cell.addEventListener('click', (event) => {
         case 'contactbtn':
             content.innerHTML = '';
             cell.classList.add('active');
-            console.log('contact');
+            showContactUs(content);
             break;
         default:
             break;
