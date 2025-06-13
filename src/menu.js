@@ -43,7 +43,7 @@ function showMenuPanel(content) {
     mainCourseMenuPrices.innerHTML = `
         <ul>
             <li>PHP 750.00</li>
-            <li>PHP 1200.00</li>
+            <li>PHP 1200.00 (good for 5-6 persons)</li>
             <li>PHP 900 / KL</li>
         </ul>
         `;
