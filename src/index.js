@@ -1,4 +1,6 @@
 import "./styles/main.css";
+import "./styles/menu.css";
+
 import { content, menuBtn, clearClass } from "./header.js";
 import displayHome from "./home.js";
 import showMenuPanel from "./menu.js";
