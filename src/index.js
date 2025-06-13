@@ -1,10 +1,30 @@
 import "./styles/main.css";
-import logo from "./assets/larakielresto.png";
-import home from "./home.js";
+import { content, menuBtn } from "./header.js";
+import displayHome from "./home.js";
 
-const logoImg = document.querySelector('#company-logo'); // logo image
-const content = document.querySelector('#content'); // content area div
+window.onload = () => {
+    displayHome(content);
+}
 
-home(content);
+menuBtn.forEach(cell => cell.addEventListener('click', (event) => {
+    //console.log(event.target.id);
+    console.log(event.target);
+    let classCounter = event.target.id;
 
-logoImg.src = logo;
+    if (event.target.id == 'homebtn' && classCounter == 'homebtn') {
+        event.target.className = 'active';
+    }
+
+    switch (event.target.id) {
+        case 'homebtn':
+            displayHome(content);
+            break;
+        case 'menubtn':
+            alert('menu button');
+            break;
+        case 'contactbtn':
+            alert('contact button');
+        default:
+            break;
+    }
+}));
