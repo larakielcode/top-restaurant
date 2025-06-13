@@ -1,3 +1,68 @@
 .menu-container {
-    background-color: red;
+    width: 50dvw;
+    grid-column: 1/3;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.menu-logo-container {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-logo-container img {
+    width: 15rem;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+
+.main-course {
+    flex: 1 0 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-auto-rows: auto;
+    background-color: rgba(237, 135, 174, 0.3);
+    border-radius: 1rem;
+}
+
+.main-course-title {
+    grid-column: 1/3;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.main-course-title > p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 3rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color);
+    margin: 1rem;
+    color: var(--pink-color);
+}
+
+.main-course-menu ul, .main-course-prices ul {
+    list-style: none;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.main-course-menu ul li,.main-course-prices ul li {
+    margin-bottom: 0.2rem;
+    color: var(--gray-color);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: thin dashed var(--gray-color);
+}
+
+.appetizers {
+    flex: 1 0 100%;
+}
+
+.beverages {
+    flex: 1 0 100%;
 }
